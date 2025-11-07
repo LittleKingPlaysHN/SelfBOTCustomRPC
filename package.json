@@ -1,0 +1,25 @@
+
+{
+  "name": "discord-selfbot",
+  "version": "1.0.0",
+  "description": "Discord selfbot with custom RPC and streaming status",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index.js"
+  },
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.0.1"
+  },
+  "keywords": [
+    "discord",
+    "selfbot",
+    "rpc",
+    "streaming"
+  ],
+  "author": "",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
