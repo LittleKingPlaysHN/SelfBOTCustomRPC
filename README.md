@@ -23,4 +23,15 @@
 - Antes: .setType('STREAMING') Trasmitiendo... (sin Botones) Solo Link Twich
 - Ahora: .setType('WATCHING') = Viendo... (Con Botones Con Links)
 
+## Como Cambiar El Tiempo De Juego:
 
+
+- Remplazar Esta Parte:
+
+function setRichPresence() {
+    const currentStatus = CONFIG.STATUS_MESSAGES[currentStatusIndex];
+// Agregamos Esto 600 = 10 Horas (Pueden Perzonalizlo)
+    const oneHourAgo = Date.now() - (600 * 60 * 1000);
+    
+- Remplazamos .setStartTimestamp(Date.now()) 
+- Por: .setStartTimestamp(oneHourAgo)
